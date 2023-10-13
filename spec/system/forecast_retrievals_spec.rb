@@ -8,5 +8,6 @@ RSpec.describe 'ForecastRetrievals', type: :system do
   it 'shows the address input and submit button' do
     visit root_path
     expect(page).to have_content('Address')
+    expect(page).to have_button('Get Forecast')
   end
 end
