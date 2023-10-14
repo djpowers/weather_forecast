@@ -1,5 +1,6 @@
 class Location < ApplicationRecord
   validates_presence_of :inputted_address
+  validates_uniqueness_of :inputted_address
 
   geocoded_by :inputted_address do |obj, results|
     if (geo = results.first)
