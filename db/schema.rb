@@ -10,9 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_13_205944) do
+ActiveRecord::Schema[7.1].define(version: 2023_10_13_221249) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "forecasts", force: :cascade do |t|
+    t.text "detailed"
+    t.integer "temperature"
+    t.string "short"
+    t.string "icon"
+    t.integer "number"
+    t.string "temperature_unit"
+    t.date "generated_at"
+    t.date "start_time"
+    t.date "end_time"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string "address"
