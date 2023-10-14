@@ -2,41 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Infinite%20Loop%20Cupertino,%20CA%2095014
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Sat, 14 Oct 2023 00:30:28 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '2308'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjMxMTQyMTAyMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjE0Mjk0Nzc1MDQsImxhdCI6IjM3LjMzMTQwNSIsImxvbiI6Ii0xMjIuMDMwNDE4NSIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJlbGVjdHJvbmljcyIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJzaG9wIiwibmFtZSI6IkFwcGxlIEluZmluaXRlIExvb3AiLCJkaXNwbGF5X25hbWUiOiJBcHBsZSBJbmZpbml0ZSBMb29wLCAxLCBJbmZpbml0ZSBMb29wLCBBcHBsZSBDYW1wdXMsIEN1cGVydGlubywgU2FudGEgQ2xhcmEgQ291bnR5LCBDYWxpZm9ybmlhLCA5NTAxNCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkFwcGxlIEluZmluaXRlIExvb3AiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6IkluZmluaXRlIExvb3AiLCJjb21tZXJjaWFsIjoiQXBwbGUgQ2FtcHVzIiwiY2l0eSI6IkN1cGVydGlubyIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy4zMzEzNTUwIiwiMzcuMzMxNDU1MCIsIi0xMjIuMDMwNDY4NSIsIi0xMjIuMDMwMzY4NSJdfSx7InBsYWNlX2lkIjozMTE0NzgzMjMsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjExNDA1NDgyOSwibGF0IjoiMzcuMzMxNjY5NyIsImxvbiI6Ii0xMjIuMDMwMDk4MjAyMTU1MDIiLCJjbGFzcyI6Im9mZmljZSIsInR5cGUiOiJjb21wYW55IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6Im9mZmljZSIsIm5hbWUiOiJJbmZpbml0ZSBMb29wIDEiLCJkaXNwbGF5X25hbWUiOiJJbmZpbml0ZSBMb29wIDEsIDEsIEluZmluaXRlIExvb3AsIEFwcGxlIENhbXB1cywgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIENhbGlmb3JuaWEsIDk1MDE0LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJvZmZpY2UiOiJJbmZpbml0ZSBMb29wIDEiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6IkluZmluaXRlIExvb3AiLCJjb21tZXJjaWFsIjoiQXBwbGUgQ2FtcHVzIiwiY2l0eSI6IkN1cGVydGlubyIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy4zMzExOTU3IiwiMzcuMzMyMTY0OSIsIi0xMjIuMDMwNTU0MyIsIi0xMjIuMDI5ODI0NSJdfSx7InBsYWNlX2lkIjozNDkwMjkzNjMsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjg5NTU2ODQsImxhdCI6IjM3LjMzMTc5MyIsImxvbiI6Ii0xMjIuMDMwNjM3IiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiMSwgSW5maW5pdGUgTG9vcCwgQXBwbGUgQ2FtcHVzLCBDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgQ2FsaWZvcm5pYSwgOTUwMTQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSBDYW1wdXMiLCJjaXR5IjoiQ3VwZXJ0aW5vIiwiY291bnR5IjoiU2FudGEgQ2xhcmEgQ291bnR5Iiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTUwMTQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM3LjMzMTc0MzAiLCIzNy4zMzE4NDMwIiwiLTEyMi4wMzA2ODcwIiwiLTEyMi4wMzA1ODcwIl19XQ==
-  recorded_at: Sat, 14 Oct 2023 00:30:28 GMT
-- request:
-    method: get
     uri: https://api.weather.gov/points/37.3314,-122.0304
     body:
       encoding: US-ASCII

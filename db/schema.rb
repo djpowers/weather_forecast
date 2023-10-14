@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_13_221249) do
     t.string "address"
     t.float "latitude"
     t.float "longitude"
+    t.string "postal_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

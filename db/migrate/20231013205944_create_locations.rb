@@ -4,6 +4,7 @@ class CreateLocations < ActiveRecord::Migration[7.1]
       t.string :address
       t.float :latitude
       t.float :longitude
+      t.string :postal_code
 
       t.timestamps
     end
