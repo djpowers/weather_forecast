@@ -1,0 +1,674 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Infinite%20Loop%20Cupertino,%20CA%2095014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 14 Oct 2023 00:30:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2308'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMTQyMTAyMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6Im5vZGUiLCJvc21faWQiOjE0Mjk0Nzc1MDQsImxhdCI6IjM3LjMzMTQwNSIsImxvbiI6Ii0xMjIuMDMwNDE4NSIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJlbGVjdHJvbmljcyIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJzaG9wIiwibmFtZSI6IkFwcGxlIEluZmluaXRlIExvb3AiLCJkaXNwbGF5X25hbWUiOiJBcHBsZSBJbmZpbml0ZSBMb29wLCAxLCBJbmZpbml0ZSBMb29wLCBBcHBsZSBDYW1wdXMsIEN1cGVydGlubywgU2FudGEgQ2xhcmEgQ291bnR5LCBDYWxpZm9ybmlhLCA5NTAxNCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkFwcGxlIEluZmluaXRlIExvb3AiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6IkluZmluaXRlIExvb3AiLCJjb21tZXJjaWFsIjoiQXBwbGUgQ2FtcHVzIiwiY2l0eSI6IkN1cGVydGlubyIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy4zMzEzNTUwIiwiMzcuMzMxNDU1MCIsIi0xMjIuMDMwNDY4NSIsIi0xMjIuMDMwMzY4NSJdfSx7InBsYWNlX2lkIjozMTE0NzgzMjMsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjExNDA1NDgyOSwibGF0IjoiMzcuMzMxNjY5NyIsImxvbiI6Ii0xMjIuMDMwMDk4MjAyMTU1MDIiLCJjbGFzcyI6Im9mZmljZSIsInR5cGUiOiJjb21wYW55IiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6Im9mZmljZSIsIm5hbWUiOiJJbmZpbml0ZSBMb29wIDEiLCJkaXNwbGF5X25hbWUiOiJJbmZpbml0ZSBMb29wIDEsIDEsIEluZmluaXRlIExvb3AsIEFwcGxlIENhbXB1cywgQ3VwZXJ0aW5vLCBTYW50YSBDbGFyYSBDb3VudHksIENhbGlmb3JuaWEsIDk1MDE0LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJvZmZpY2UiOiJJbmZpbml0ZSBMb29wIDEiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6IkluZmluaXRlIExvb3AiLCJjb21tZXJjaWFsIjoiQXBwbGUgQ2FtcHVzIiwiY2l0eSI6IkN1cGVydGlubyIsImNvdW50eSI6IlNhbnRhIENsYXJhIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk1MDE0IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy4zMzExOTU3IiwiMzcuMzMyMTY0OSIsIi0xMjIuMDMwNTU0MyIsIi0xMjIuMDI5ODI0NSJdfSx7InBsYWNlX2lkIjozNDkwMjkzNjMsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjg5NTU2ODQsImxhdCI6IjM3LjMzMTc5MyIsImxvbiI6Ii0xMjIuMDMwNjM3IiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5NDczNjQ0MmUtMDgsImFkZHJlc3N0eXBlIjoicGxhY2UiLCJuYW1lIjoiIiwiZGlzcGxheV9uYW1lIjoiMSwgSW5maW5pdGUgTG9vcCwgQXBwbGUgQ2FtcHVzLCBDdXBlcnRpbm8sIFNhbnRhIENsYXJhIENvdW50eSwgQ2FsaWZvcm5pYSwgOTUwMTQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjEiLCJyb2FkIjoiSW5maW5pdGUgTG9vcCIsImNvbW1lcmNpYWwiOiJBcHBsZSBDYW1wdXMiLCJjaXR5IjoiQ3VwZXJ0aW5vIiwiY291bnR5IjoiU2FudGEgQ2xhcmEgQ291bnR5Iiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTUwMTQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM3LjMzMTc0MzAiLCIzNy4zMzE4NDMwIiwiLTEyMi4wMzA2ODcwIiwiLTEyMi4wMzA1ODcwIl19XQ==
+  recorded_at: Sat, 14 Oct 2023 00:30:28 GMT
+- request:
+    method: get
+    uri: https://api.weather.gov/points/37.3314,-122.0304
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.weather.gov
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/geo+json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      X-Request-Id:
+      - a859dfb5-4095-423c-a3c9-950bf0b321bc
+      X-Correlation-Id:
+      - 118b1809
+      X-Server-Id:
+      - vm-bldr-nids-apiapp12.ncep.noaa.gov
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=80561, s-maxage=120
+      Expires:
+      - Sat, 14 Oct 2023 22:53:10 GMT
+      Date:
+      - Sat, 14 Oct 2023 00:30:29 GMT
+      Content-Length:
+      - '3076'
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 35cff379
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "@context": [
+                "https://geojson.org/geojson-ld/geojson-context.jsonld",
+                {
+                    "@version": "1.1",
+                    "wx": "https://api.weather.gov/ontology#",
+                    "s": "https://schema.org/",
+                    "geo": "http://www.opengis.net/ont/geosparql#",
+                    "unit": "http://codes.wmo.int/common/unit/",
+                    "@vocab": "https://api.weather.gov/ontology#",
+                    "geometry": {
+                        "@id": "s:GeoCoordinates",
+                        "@type": "geo:wktLiteral"
+                    },
+                    "city": "s:addressLocality",
+                    "state": "s:addressRegion",
+                    "distance": {
+                        "@id": "s:Distance",
+                        "@type": "s:QuantitativeValue"
+                    },
+                    "bearing": {
+                        "@type": "s:QuantitativeValue"
+                    },
+                    "value": {
+                        "@id": "s:value"
+                    },
+                    "unitCode": {
+                        "@id": "s:unitCode",
+                        "@type": "@id"
+                    },
+                    "forecastOffice": {
+                        "@type": "@id"
+                    },
+                    "forecastGridData": {
+                        "@type": "@id"
+                    },
+                    "publicZone": {
+                        "@type": "@id"
+                    },
+                    "county": {
+                        "@type": "@id"
+                    }
+                }
+            ],
+            "id": "https://api.weather.gov/points/37.3314,-122.0304",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0304,
+                    37.331400000000002
+                ]
+            },
+            "properties": {
+                "@id": "https://api.weather.gov/points/37.3314,-122.0304",
+                "@type": "wx:Point",
+                "cwa": "MTR",
+                "forecastOffice": "https://api.weather.gov/offices/MTR",
+                "gridId": "MTR",
+                "gridX": 94,
+                "gridY": 83,
+                "forecast": "https://api.weather.gov/gridpoints/MTR/94,83/forecast",
+                "forecastHourly": "https://api.weather.gov/gridpoints/MTR/94,83/forecast/hourly",
+                "forecastGridData": "https://api.weather.gov/gridpoints/MTR/94,83",
+                "observationStations": "https://api.weather.gov/gridpoints/MTR/94,83/stations",
+                "relativeLocation": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.044956,
+                            37.319398
+                        ]
+                    },
+                    "properties": {
+                        "city": "Cupertino",
+                        "state": "CA",
+                        "distance": {
+                            "unitCode": "wmoUnit:m",
+                            "value": 1854.0880530816
+                        },
+                        "bearing": {
+                            "unitCode": "wmoUnit:degree_(angle)",
+                            "value": 43
+                        }
+                    }
+                },
+                "forecastZone": "https://api.weather.gov/zones/forecast/CAZ513",
+                "county": "https://api.weather.gov/zones/county/CAC085",
+                "fireWeatherZone": "https://api.weather.gov/zones/fire/CAZ513",
+                "timeZone": "America/Los_Angeles",
+                "radarStation": "KMUX"
+            }
+        }
+  recorded_at: Sat, 14 Oct 2023 00:30:29 GMT
+- request:
+    method: get
+    uri: https://api.weather.gov/gridpoints/MTR/94,83/forecast
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.weather.gov
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.1
+      Content-Type:
+      - application/geo+json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Correlation-Id, X-Request-Id, X-Server-Id
+      X-Request-Id:
+      - 577db256-c5cf-46d5-a892-7d7712450f5e
+      X-Correlation-Id:
+      - 1c801597
+      X-Server-Id:
+      - vm-bldr-nids-apiapp5.ncep.noaa.gov
+      Vary:
+      - Accept,Feature-Flags,Accept-Language
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=2454, s-maxage=3600
+      Expires:
+      - Sat, 14 Oct 2023 01:11:23 GMT
+      Date:
+      - Sat, 14 Oct 2023 00:30:29 GMT
+      Content-Length:
+      - '16994'
+      Connection:
+      - keep-alive
+      X-Edge-Request-Id:
+      - 35cff42f
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "@context": [
+                "https://geojson.org/geojson-ld/geojson-context.jsonld",
+                {
+                    "@version": "1.1",
+                    "wx": "https://api.weather.gov/ontology#",
+                    "geo": "http://www.opengis.net/ont/geosparql#",
+                    "unit": "http://codes.wmo.int/common/unit/",
+                    "@vocab": "https://api.weather.gov/ontology#"
+                }
+            ],
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -122.0551895,
+                            37.341112600000002
+                        ],
+                        [
+                            -122.0496304,
+                            37.319254600000001
+                        ],
+                        [
+                            -122.0221007,
+                            37.323679300000002
+                        ],
+                        [
+                            -122.0276545,
+                            37.345537800000002
+                        ],
+                        [
+                            -122.0551895,
+                            37.341112600000002
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "updated": "2023-10-13T20:51:34+00:00",
+                "units": "us",
+                "forecastGenerator": "BaselineForecastGenerator",
+                "generatedAt": "2023-10-14T00:11:55+00:00",
+                "updateTime": "2023-10-13T20:51:34+00:00",
+                "validTimes": "2023-10-13T14:00:00+00:00/P7DT14H",
+                "elevation": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 74.066400000000002
+                },
+                "periods": [
+                    {
+                        "number": 1,
+                        "name": "This Afternoon",
+                        "startTime": "2023-10-13T17:00:00-07:00",
+                        "endTime": "2023-10-13T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 76,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": "falling",
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 11.111111111111111
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 48
+                        },
+                        "windSpeed": "7 mph",
+                        "windDirection": "NNE",
+                        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                        "shortForecast": "Mostly Cloudy",
+                        "detailedForecast": "Mostly cloudy. High near 76, with temperatures falling to around 73 in the afternoon. North northeast wind around 7 mph."
+                    },
+                    {
+                        "number": 2,
+                        "name": "Tonight",
+                        "startTime": "2023-10-13T18:00:00-07:00",
+                        "endTime": "2023-10-14T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 54,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 11.111111111111111
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 78
+                        },
+                        "windSpeed": "2 to 7 mph",
+                        "windDirection": "E",
+                        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                        "shortForecast": "Mostly Cloudy",
+                        "detailedForecast": "Mostly cloudy, with a low around 54. East wind 2 to 7 mph."
+                    },
+                    {
+                        "number": 3,
+                        "name": "Saturday",
+                        "startTime": "2023-10-14T06:00:00-07:00",
+                        "endTime": "2023-10-14T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 77,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": "falling",
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 15.555555555555555
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 73
+                        },
+                        "windSpeed": "2 to 8 mph",
+                        "windDirection": "NNE",
+                        "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                        "shortForecast": "Partly Sunny",
+                        "detailedForecast": "Partly sunny. High near 77, with temperatures falling to around 74 in the afternoon. North northeast wind 2 to 8 mph."
+                    },
+                    {
+                        "number": 4,
+                        "name": "Saturday Night",
+                        "startTime": "2023-10-14T18:00:00-07:00",
+                        "endTime": "2023-10-15T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 58,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 16.111111111111111
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 89
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "N",
+                        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                        "shortForecast": "Mostly Cloudy",
+                        "detailedForecast": "Mostly cloudy, with a low around 58. North wind 1 to 7 mph."
+                    },
+                    {
+                        "number": 5,
+                        "name": "Sunday",
+                        "startTime": "2023-10-15T06:00:00-07:00",
+                        "endTime": "2023-10-15T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 82,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 14.444444444444445
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 92
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "N",
+                        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                        "shortForecast": "Mostly Sunny",
+                        "detailedForecast": "Mostly sunny, with a high near 82. North wind 1 to 7 mph."
+                    },
+                    {
+                        "number": 6,
+                        "name": "Sunday Night",
+                        "startTime": "2023-10-15T18:00:00-07:00",
+                        "endTime": "2023-10-16T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 56,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 15
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 82
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "NW",
+                        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                        "shortForecast": "Mostly Clear",
+                        "detailedForecast": "Mostly clear, with a low around 56."
+                    },
+                    {
+                        "number": 7,
+                        "name": "Monday",
+                        "startTime": "2023-10-16T06:00:00-07:00",
+                        "endTime": "2023-10-16T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 78,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 15.555555555555555
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 85
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "NW",
+                        "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                        "shortForecast": "Mostly Sunny",
+                        "detailedForecast": "Mostly sunny, with a high near 78."
+                    },
+                    {
+                        "number": 8,
+                        "name": "Monday Night",
+                        "startTime": "2023-10-16T18:00:00-07:00",
+                        "endTime": "2023-10-17T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 60,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 16.111111111111111
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 92
+                        },
+                        "windSpeed": "2 to 7 mph",
+                        "windDirection": "NW",
+                        "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                        "shortForecast": "Mostly Cloudy",
+                        "detailedForecast": "Mostly cloudy, with a low around 60."
+                    },
+                    {
+                        "number": 9,
+                        "name": "Tuesday",
+                        "startTime": "2023-10-17T06:00:00-07:00",
+                        "endTime": "2023-10-17T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 79,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 16.666666666666668
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 93
+                        },
+                        "windSpeed": "2 to 9 mph",
+                        "windDirection": "NW",
+                        "icon": "https://api.weather.gov/icons/land/day/fog/sct?size=medium",
+                        "shortForecast": "Patchy Fog then Mostly Sunny",
+                        "detailedForecast": "Patchy fog before 7am. Mostly sunny, with a high near 79."
+                    },
+                    {
+                        "number": 10,
+                        "name": "Tuesday Night",
+                        "startTime": "2023-10-17T18:00:00-07:00",
+                        "endTime": "2023-10-18T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 57,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 15.555555555555555
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 84
+                        },
+                        "windSpeed": "2 to 9 mph",
+                        "windDirection": "NNW",
+                        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                        "shortForecast": "Mostly Clear",
+                        "detailedForecast": "Mostly clear, with a low around 57."
+                    },
+                    {
+                        "number": 11,
+                        "name": "Wednesday",
+                        "startTime": "2023-10-18T06:00:00-07:00",
+                        "endTime": "2023-10-18T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 83,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 13.888888888888889
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 83
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "N",
+                        "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                        "shortForecast": "Sunny",
+                        "detailedForecast": "Sunny, with a high near 83."
+                    },
+                    {
+                        "number": 12,
+                        "name": "Wednesday Night",
+                        "startTime": "2023-10-18T18:00:00-07:00",
+                        "endTime": "2023-10-19T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 59,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 13.888888888888889
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 71
+                        },
+                        "windSpeed": "2 to 7 mph",
+                        "windDirection": "NNW",
+                        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                        "shortForecast": "Mostly Clear",
+                        "detailedForecast": "Mostly clear, with a low around 59."
+                    },
+                    {
+                        "number": 13,
+                        "name": "Thursday",
+                        "startTime": "2023-10-19T06:00:00-07:00",
+                        "endTime": "2023-10-19T18:00:00-07:00",
+                        "isDaytime": true,
+                        "temperature": 85,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 13.888888888888889
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 73
+                        },
+                        "windSpeed": "1 to 7 mph",
+                        "windDirection": "N",
+                        "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
+                        "shortForecast": "Sunny",
+                        "detailedForecast": "Sunny, with a high near 85."
+                    },
+                    {
+                        "number": 14,
+                        "name": "Thursday Night",
+                        "startTime": "2023-10-19T18:00:00-07:00",
+                        "endTime": "2023-10-20T06:00:00-07:00",
+                        "isDaytime": false,
+                        "temperature": 58,
+                        "temperatureUnit": "F",
+                        "temperatureTrend": null,
+                        "probabilityOfPrecipitation": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": null
+                        },
+                        "dewpoint": {
+                            "unitCode": "wmoUnit:degC",
+                            "value": 13.888888888888889
+                        },
+                        "relativeHumidity": {
+                            "unitCode": "wmoUnit:percent",
+                            "value": 72
+                        },
+                        "windSpeed": "2 to 7 mph",
+                        "windDirection": "NW",
+                        "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                        "shortForecast": "Mostly Clear",
+                        "detailedForecast": "Mostly clear, with a low around 58."
+                    }
+                ]
+            }
+        }
+  recorded_at: Sat, 14 Oct 2023 00:30:29 GMT
+recorded_with: VCR 6.2.0

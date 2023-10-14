@@ -12,7 +12,9 @@ RSpec.describe 'ForecastRetrievals', type: :system do
     within('form') do
       fill_in 'Address', with: '1 Infinite Loop Cupertino, CA 95014'
     end
-    click_button 'Get forecast'
+    VCR.use_cassette('forecast_retrieval') do
+      click_button 'Get forecast'
+    end
     expect(page).to have_content('Current temperature is 76° F')
   end
 end

@@ -35,4 +35,5 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'vcr'
 end

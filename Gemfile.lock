@@ -242,6 +242,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    vcr (6.2.0)
     webrick (1.8.1)
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
@@ -266,6 +267,7 @@ DEPENDENCIES
   rubocop
   sprockets-rails
   tzinfo-data
+  vcr
 
 RUBY VERSION
    ruby 3.2.2p53
