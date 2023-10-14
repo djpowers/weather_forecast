@@ -4,16 +4,10 @@ class ForecastsController < ApplicationController
   end
 
   def create
-    results = Geocoder.search(params[:query])
-    latitude, longitude = results.first.coordinates
-    return unless latitude && longitude
-
-    @location = Location.find_or_create_by(address: params[:query],
-                                           latitude:,
-                                           longitude:)
+    @location = Location.find_or_create_by(inputted_address: params[:query])
 
     # National Weather Service Points endpoint (GET)
-    uri = URI("https://api.weather.gov/points/#{latitude.truncate(4)},#{longitude.truncate(4)}")
+    uri = URI("https://api.weather.gov/points/#{@location.latitude.truncate(4)},#{@location.longitude.truncate(4)}")
 
     # Create client
     http = Net::HTTP.new(uri.host, uri.port)
