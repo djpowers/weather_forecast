@@ -6,31 +6,10 @@ class ForecastsController < ApplicationController
   def create
     @location = Location.find_or_create_by(inputted_address: params[:query])
 
-    # National Weather Service Points endpoint (GET)
-    uri = URI("https://api.weather.gov/points/#{@location.latitude.truncate(4)},#{@location.longitude.truncate(4)}")
+    national_weather_service = NationalWeatherService.new(@location.latitude.truncate(4),
+                                                          @location.longitude.truncate(4))
 
-    # Create client
-    http = Net::HTTP.new(uri.host, uri.port)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
-
-    # Create Request
-    req = Net::HTTP::Get.new(uri)
-
-    # Fetch Request
-    res = http.request(req)
-
-    # National Weather Service Forecast endpoint (GET)
-    forecast_uri = URI(JSON.parse(res.body)['properties']['forecast'])
-
-    # Create Request
-    req = Net::HTTP::Get.new(forecast_uri)
-
-    # Fetch Request
-    res = http.request(req)
-
-    # Parse first forecast period
-    forecast_data = JSON.parse(res.body)
+    forecast_data = national_weather_service.hourly_forecast
     current_forecast = forecast_data['properties']['periods'][0]
 
     @forecast = Forecast.new(

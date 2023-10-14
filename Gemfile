@@ -20,6 +20,7 @@ gem 'puma', '>= 5.0'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 
 gem 'geocoder'
+gem 'httparty'
 
 group :development, :test do
   gem 'rspec-rails'
