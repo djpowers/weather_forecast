@@ -10,5 +10,6 @@ class Location < ApplicationRecord
       obj.postal_code = geo.postal_code
     end
   end
-  after_validation :geocode
+
+  after_validation :geocode, if: ->(obj) { obj.inputted_address.present? and obj.inputted_address_changed? }
 end
