@@ -9,12 +9,13 @@ class NationalWeatherService
   end
 
   def points
-    points_data = JSON.parse(self.class.get("/points/#{@options[:latitude]},#{@options[:longitude]}"))
-    @hourly_forecast_uri = points_data['properties']['forecastHourly']
+    points_data = JSON.parse(self.class.get("/points/#{@options[:latitude]},#{@options[:longitude]}"),
+                             symbolize_names: true)
+    @hourly_forecast_uri = points_data[:properties][:forecastHourly]
   end
 
   def hourly_forecast
     points
-    JSON.parse(self.class.get(@hourly_forecast_uri))
+    JSON.parse(self.class.get(@hourly_forecast_uri), symbolize_names: true)
   end
 end

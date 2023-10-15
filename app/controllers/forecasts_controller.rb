@@ -10,18 +10,18 @@ class ForecastsController < ApplicationController
                                                           @location.longitude.truncate(4))
 
     forecast_data = national_weather_service.hourly_forecast
-    current_forecast = forecast_data['properties']['periods'][0]
+    current_forecast = forecast_data[:properties][:periods].first
 
     @forecast = Forecast.new(
-      detailed: current_forecast['detailedForecast'],
-      temperature: current_forecast['temperature'],
-      short: current_forecast['shortForecast'],
-      icon: current_forecast['icon'],
-      number: current_forecast['number'],
-      temperature_unit: current_forecast['temperatureUnit'],
-      start_time: current_forecast['startTime'],
-      end_time: current_forecast['endTime'],
-      name: current_forecast['name']
+      detailed: current_forecast[:detailedForecast],
+      temperature: current_forecast[:temperature],
+      short: current_forecast[:shortForecast],
+      icon: current_forecast[:icon],
+      number: current_forecast[:number],
+      temperature_unit: current_forecast[:temperatureUnit],
+      start_time: current_forecast[:startTime],
+      end_time: current_forecast[:endTime],
+      name: current_forecast[:name]
     )
 
     if @forecast.save
