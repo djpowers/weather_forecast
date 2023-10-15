@@ -21,7 +21,8 @@ class ForecastsController < ApplicationController
       temperature_unit: current_forecast[:temperatureUnit],
       start_time: current_forecast[:startTime],
       end_time: current_forecast[:endTime],
-      name: current_forecast[:name]
+      name: current_forecast[:name],
+      location: @location
     )
 
     if @forecast.save
