@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :forecasts, only: %i[create show]
+  resources :locations, param: :postal_code do
+    resources :forecasts, only: :show
+  end
+  resources :forecasts, only: :create
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

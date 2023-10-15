@@ -12,4 +12,8 @@ class Location < ApplicationRecord
   end
 
   after_validation :geocode, if: ->(obj) { obj.inputted_address.present? and obj.inputted_address_changed? }
+
+  def to_param
+    postal_code
+  end
 end

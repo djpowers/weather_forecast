@@ -25,7 +25,7 @@ class ForecastsController < ApplicationController
     )
 
     if @forecast.save
-      redirect_to @forecast
+      redirect_to location_forecast_path(@location, @forecast)
     else
       render new
     end
