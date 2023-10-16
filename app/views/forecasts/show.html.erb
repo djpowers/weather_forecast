@@ -3,4 +3,6 @@
 <div>Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %></div>
 <div><%= @forecast.short %></div>
 
+<div>Forecast valid from <%="#{@forecast.start_time.to_fs(:long)} to #{@forecast.end_time.to_fs(:long)}." %></div>
+
 <%= link_to 'Look up new address', root_path %>
