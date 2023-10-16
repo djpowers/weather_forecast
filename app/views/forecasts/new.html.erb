@@ -1,7 +1,7 @@
 <h1>Weather Forecast</h1>
 <%= form_with url: forecasts_path, method: :post do |form| %>
   <%= form.label :query, "Address:" %>
-  <%= form.text_field :query %>
+  <%= form.text_field :query, required: true %>
   <%= form.submit "Get forecast" %>
 <% end %>
 <br />
