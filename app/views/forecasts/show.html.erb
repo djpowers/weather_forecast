@@ -6,7 +6,7 @@
 </div>
 
 <div>
-	<pre>Forecast valid from <%="#{@forecast.start_time.to_fs(:long)} to #{@forecast.end_time.to_fs(:long)}." %></pre>
+	<pre>Forecast valid from <%="#{@forecast.start_time.to_fs(:long)} UTC to #{@forecast.end_time.to_fs(:long)} UTC." %></pre>
 	<pre>Data retrieved <%= time_ago_in_words(@forecast.created_at) %> ago.</pre>
 	<pre>Provided by <%= link_to 'National Weather Service', 'https://www.weather.gov/documentation/services-web-api' %>.
 </div>

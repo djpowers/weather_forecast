@@ -18,7 +18,7 @@ RSpec.describe 'ForecastRetrievals', type: :system do
     expect(page).to have_content('Forecast for 95014')
     expect(page).to have_content('Current temperature is 76° F')
     expect(page).to have_content('Cloudy')
-    expect(page).to have_content('Forecast valid from October 14, 2023 21:00 to October 14, 2023 22:00.')
+    expect(page).to have_content('Forecast valid from October 14, 2023 21:00 UTC to October 14, 2023 22:00 UTC.')
   end
 
   it 'caches requests and indicates when a forecast is cached' do
