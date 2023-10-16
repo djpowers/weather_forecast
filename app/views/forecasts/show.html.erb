@@ -1,15 +1,14 @@
 <h1>Forecast for <%= @location.postal_code %></h1>
 <img src=<%= @forecast.icon %> alt="Icon from National Weather Service indicating current conditions" />
 <div>
-	Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %>
-	<br />
-	<%= @forecast.short %>
+	<h2>Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %></h2>
+	<h3><%= @forecast.short %></h3>
+	<em><%= @forecast.detailed %></em>
 </div>
 
 <div>
-	Forecast valid from <%="#{@forecast.start_time.to_fs(:long)} to #{@forecast.end_time.to_fs(:long)}." %>
-	<br />
-	Data retrieved <%= time_ago_in_words(@forecast.created_at) %> ago.
+	<pre>Forecast valid from <%="#{@forecast.start_time.to_fs(:long)} to #{@forecast.end_time.to_fs(:long)}." %></pre>
+	<pre>Data retrieved <%= time_ago_in_words(@forecast.created_at) %> ago.</pre>
 </div>
 
 <%= link_to 'Look up new address', root_path %>

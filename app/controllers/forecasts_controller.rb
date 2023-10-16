@@ -22,19 +22,22 @@ class ForecastsController < ApplicationController
     national_weather_service = NationalWeatherService.new(@location.latitude.truncate(4),
                                                           @location.longitude.truncate(4))
 
-    forecast_data = national_weather_service.hourly_forecast
+    hourly_forecast_data = national_weather_service.get_hourly_forecast
+    hourly_forecast = hourly_forecast_data[:properties][:periods].first
+
+    forecast_data = national_weather_service.get_forecast
     current_forecast = forecast_data[:properties][:periods].first
 
     @forecast = Forecast.new(
       detailed: current_forecast[:detailedForecast],
-      temperature: current_forecast[:temperature],
-      short: current_forecast[:shortForecast],
-      icon: current_forecast[:icon],
-      number: current_forecast[:number],
-      temperature_unit: current_forecast[:temperatureUnit],
-      start_time: current_forecast[:startTime],
-      end_time: current_forecast[:endTime],
-      name: current_forecast[:name],
+      temperature: hourly_forecast[:temperature],
+      short: hourly_forecast[:shortForecast],
+      icon: hourly_forecast[:icon],
+      number: hourly_forecast[:number],
+      temperature_unit: hourly_forecast[:temperatureUnit],
+      start_time: hourly_forecast[:startTime],
+      end_time: hourly_forecast[:endTime],
+      name: hourly_forecast[:name],
       location: @location
     )
 
