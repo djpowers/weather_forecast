@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Ruby on Rails application retrieves forecast data for a provided address. Forecast data provided by the [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+Ensure the following are installed on your system:
+- Ruby 3.2.2
+- PostgreSQL 16.0
 
-* System dependencies
+Install dependencies with `bundle install`.
 
-* Configuration
+Create the database with `rails db:create`.
 
-* Database creation
+Start the server with `rails server`.
 
-* Database initialization
+## Tests
 
-* How to run the test suite
+Run the full test suite with `rspec spec`.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please note that external HTTP requests are stubbed.
