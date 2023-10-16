@@ -12,4 +12,13 @@ RSpec.describe Forecast, type: :model do
     expect(forecast.errors[:start_time]).to be_present
     expect(forecast.errors[:end_time]).to be_present
   end
+
+  it 'finds recent forecasts for a given zip code' do
+    location = FactoryBot.create(:location)
+    FactoryBot.create(:forecast, location:, created_at: 45.minutes.ago)
+    FactoryBot.create(:forecast, location:, created_at: 15.minutes.ago)
+    FactoryBot.create(:forecast, location:)
+
+    expect(Forecast.by_zip_from_last_half_hour(location.postal_code).length).to eq(2)
+  end
 end

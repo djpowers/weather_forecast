@@ -7,16 +7,13 @@ class ForecastsController < ApplicationController
     @location = Location.find_or_create_by(inputted_address: params[:query])
 
     # check for existing forecasts within determined zip code
-    forecasts_by_zip_in_last_half_hour = Forecast.joins(:location).where(
-      location: { postal_code: @location.postal_code }, created_at: 30.minutes.ago..Time.now
-    ).order(created_at: :desc)
+    recent_forecasts = Forecast.by_zip_from_last_half_hour(@location.postal_code)
 
-    # return most recent forecast, if available
-    if forecasts_by_zip_in_last_half_hour.present?
+    if recent_forecasts.present?
       flash[:notice] = 'Forecast data retrieved from cache'
       redirect_to location_forecast_path(
         @location,
-        forecasts_by_zip_in_last_half_hour.first
+        recent_forecasts.first
       ) and return
     end
 
