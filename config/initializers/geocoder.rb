@@ -18,4 +18,8 @@ if Rails.env.test?
       }
     ]
   )
+
+  Geocoder::Lookup::Test.add_stub(
+    'zzzzzzzzzz', []
+  )
 end

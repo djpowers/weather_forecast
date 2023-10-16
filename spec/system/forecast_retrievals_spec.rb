@@ -39,4 +39,15 @@ RSpec.describe 'ForecastRetrievals', type: :system do
     end
     expect(page).to have_content('Forecast data retrieved from cache')
   end
+
+  it 'handles errors' do
+    visit root_path
+    within('form') do
+      fill_in 'Address', with: 'zzzzzzzzzz'
+    end
+    VCR.use_cassette('forecast_retrieval') do
+      click_button 'Get forecast'
+    end
+    expect(page).to have_content('There was an error. Please try again.')
+  end
 end

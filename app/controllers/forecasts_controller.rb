@@ -48,5 +48,7 @@ class ForecastsController < ApplicationController
     end
   rescue StandardError => e
     puts "HTTP Request failed (#{e.message})"
+    flash[:alert] = 'There was an error. Please try again.'
+    redirect_to root_path
   end
 end

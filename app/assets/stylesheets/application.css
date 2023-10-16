@@ -17,6 +17,10 @@ body {
   text-align: center;
 }
 
-.flash {
+.flash.notice {
   background-color: #d7ebf0;
+}
+
+.flash.alert {
+  background-color: #dc8a90;
 }
