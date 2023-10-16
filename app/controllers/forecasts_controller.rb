@@ -8,7 +8,10 @@ class ForecastsController < ApplicationController
     @location = Location.find_or_create_by(inputted_address: params[:query])
 
     # check for existing forecasts within determined zip code
-    recent_forecasts = Forecast.by_zip_from_last_half_hour(@location.postal_code)
+    forecast_ids = Rails.cache.fetch('recent_forecast_ids', expires_in: 30.minutes) do
+      Forecast.by_zip_from_last_half_hour(@location.postal_code).pluck(:id)
+    end
+    recent_forecasts = Forecast.where(id: forecast_ids)
 
     if recent_forecasts.present?
       flash[:notice] = 'Forecast data retrieved from cache'
@@ -47,7 +50,7 @@ class ForecastsController < ApplicationController
       render new
     end
   rescue StandardError => e
-    puts "HTTP Request failed (#{e.message})"
+    logger.error "HTTP Request failed (#{e.message})"
     flash[:alert] = 'There was an error. Please try again.'
     redirect_to root_path
   end
