@@ -1,4 +1,4 @@
-# README
+# Weather Forecast
 
 This Ruby on Rails application retrieves forecast data for a provided address. Forecast data provided by the [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
 
@@ -26,15 +26,15 @@ The application uses the following table structure:
 
 ```mermaid
 erDiagram
-  l[Location] {
+  LOCATION ||--o{ FORECAST : has
+  LOCATION {
     string inputted_address
     float latitude
     float longitude
     string postal_code
     string normalized_address
   }
-
-  f[Forecast] {
+  FORECAST {
     text detailed
     integer temperature
     string short
@@ -45,7 +45,6 @@ erDiagram
     date start_time
     date end_time
     string name
+    bigint location_id
   }
-
-  l ||--o| f : has
 ```
