@@ -10,7 +10,7 @@ Ensure the following are installed on your system:
 
 Install dependencies with `bundle install`.
 
-Create the database with `rails db:create`.
+Prepare the database with `rails db:prepare`.
 
 Start the server with `rails server`.
 
