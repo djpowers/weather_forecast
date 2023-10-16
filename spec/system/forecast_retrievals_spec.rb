@@ -15,7 +15,9 @@ RSpec.describe 'ForecastRetrievals', type: :system do
     VCR.use_cassette('forecast_retrieval') do
       click_button 'Get forecast'
     end
+    expect(page).to have_content('Forecast for 95014')
     expect(page).to have_content('Current temperature is 76° F')
+    expect(page).to have_content('Cloudy')
   end
 
   it 'caches requests and indicates when a forecast is cached' do

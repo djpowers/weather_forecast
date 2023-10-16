@@ -1,6 +1,7 @@
 class ForecastsController < ApplicationController
   def show
     @forecast = Forecast.find(params[:id])
+    @location = @forecast.location
   end
 
   def create

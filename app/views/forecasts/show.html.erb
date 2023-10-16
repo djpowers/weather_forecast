@@ -1,1 +1,3 @@
-<h1>Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %></h1>
+<h1>Forecast for <%= @location.postal_code %></h1>
+<div>Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %></div>
+<div><%= @forecast.short %></div>
