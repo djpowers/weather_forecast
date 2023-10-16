@@ -2,3 +2,5 @@
 <img src=<%= @forecast.icon %> alt="Icon from National Weather Service indicating current conditions" />
 <div>Current temperature is <%= "#{@forecast.temperature}° #{@forecast.temperature_unit}" %></div>
 <div><%= @forecast.short %></div>
+
+<%= link_to 'Look up new address', root_path %>

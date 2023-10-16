@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :locations, param: :postal_code do
+  resources :locations, only: :show, param: :postal_code do
     resources :forecasts, only: :show
   end
   resources :forecasts, only: :create

@@ -29,7 +29,7 @@ RSpec.describe 'ForecastRetrievals', type: :system do
       click_button 'Get forecast'
     end
 
-    visit root_path
+    click_link 'Look up new address'
     within('form') do
       fill_in 'Address', with: '1 Infinite Loop Cupertino, CA 95014'
     end
