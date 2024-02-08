@@ -10,13 +10,13 @@ Ensure the following are installed on your system:
 
 Install dependencies with `bundle install`.
 
-Prepare the database with `rails db:prepare`.
+Prepare the database with `bundle exec rails db:prepare`.
 
-Start the server with `rails server`.
+Start the server with `bundle exec rails server`.
 
 ## Tests
 
-Run the full test suite with `rspec spec`.
+Run the full test suite with `bundle exec rspec spec`.
 
 Please note that external HTTP requests are stubbed.
 
